@@ -1,0 +1,605 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "version": 1,
+  "components": [
+    {
+      "bom-ref": "pkg:oci/python-base@sha256:b39c77b64aebcb02d4b2205d37c2d16b42fccd9069d92903213c6b06c459230b?arch=amd64&mediaType=application%2Fvnd.oci.image.manifest.v1%2Bjson&os=linux",
+      "type": "operating-system",
+      "name": "Wolfi",
+      "version": "20221118",
+      "description": "apko OS layer",
+      "purl": "pkg:oci/python-base@sha256:b39c77b64aebcb02d4b2205d37c2d16b42fccd9069d92903213c6b06c459230b?arch=amd64&mediaType=application%2Fvnd.oci.image.layer.v1.tar%2Bgzip&os=linux",
+      "components": [
+        {
+          "bom-ref": "pkg:apk/wolfi/glibc-locale-posix@2.36-r3?arch=x86_64",
+          "type": "operating-system",
+          "name": "glibc-locale-posix",
+          "version": "2.36-r3",
+          "description": "POSIX locale data for glibc",
+          "purl": "pkg:apk/wolfi/glibc-locale-posix@2.36-r3?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/wolfi-baselayout@20221118-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "wolfi-baselayout",
+          "version": "20221118-r0",
+          "description": "baselayout data for Wolfi",
+          "purl": "pkg:apk/wolfi/wolfi-baselayout@20221118-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/glibc@2.36-r3?arch=x86_64",
+          "type": "operating-system",
+          "name": "glibc",
+          "version": "2.36-r3",
+          "description": "the GNU C library",
+          "purl": "pkg:apk/wolfi/glibc@2.36-r3?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/busybox@1.35.0-r4?arch=x86_64",
+          "type": "operating-system",
+          "name": "busybox",
+          "version": "1.35.0-r4",
+          "description": "swiss-army knife for embedded systems",
+          "purl": "pkg:apk/wolfi/busybox@1.35.0-r4?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-2.0-only"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/ca-certificates-bundle@20220614-r2?arch=x86_64",
+          "type": "operating-system",
+          "name": "ca-certificates-bundle",
+          "version": "20220614-r2",
+          "description": "",
+          "purl": "pkg:apk/wolfi/ca-certificates-bundle@20220614-r2?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MPL-2.0 AND MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/bzip2@1.0.8-r2?arch=x86_64",
+          "type": "operating-system",
+          "name": "bzip2",
+          "version": "1.0.8-r2",
+          "description": "a library implementing the bzip2 compression algorithms",
+          "purl": "pkg:apk/wolfi/bzip2@1.0.8-r2?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MPL-2.0 AND MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/libcrypto3@3.0.7-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "libcrypto3",
+          "version": "3.0.7-r1",
+          "description": "OpenSSL libcrypto library",
+          "purl": "pkg:apk/wolfi/libcrypto3@3.0.7-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "Apache-2.0"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/expat@2.5.0-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "expat",
+          "version": "2.5.0-r0",
+          "description": "XML SAX Parser library written in C",
+          "purl": "pkg:apk/wolfi/expat@2.5.0-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/libffi@3.4.4-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "libffi",
+          "version": "3.4.4-r0",
+          "description": "portable foreign function interface library",
+          "purl": "pkg:apk/wolfi/libffi@3.4.4-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/gdbm@1.23-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "gdbm",
+          "version": "1.23-r1",
+          "description": "GNU dbm is a set of database routines which use extensible hashing",
+          "purl": "pkg:apk/wolfi/gdbm@1.23-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/xz@5.4.0-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "xz",
+          "version": "5.4.0-r0",
+          "description": "Library and CLI tools for XZ and LZMA compressed files",
+          "purl": "pkg:apk/wolfi/xz@5.4.0-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/libgcc@12.2.0-r6?arch=x86_64",
+          "type": "operating-system",
+          "name": "libgcc",
+          "version": "12.2.0-r6",
+          "description": "GCC runtime library",
+          "purl": "pkg:apk/wolfi/libgcc@12.2.0-r6?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/libstdc++@12.2.0-r6?arch=x86_64",
+          "type": "operating-system",
+          "name": "libstdc++",
+          "version": "12.2.0-r6",
+          "description": "",
+          "purl": "pkg:apk/wolfi/libstdc++@12.2.0-r6?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/mpdecimal@2.5.1-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "mpdecimal",
+          "version": "2.5.1-r1",
+          "description": "complete implementation of the general decimal arithmetic specification",
+          "purl": "pkg:apk/wolfi/mpdecimal@2.5.1-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/ncurses-terminfo-base@6.3-r2?arch=x86_64",
+          "type": "operating-system",
+          "name": "ncurses-terminfo-base",
+          "version": "6.3-r2",
+          "description": "descriptions of common terminals",
+          "purl": "pkg:apk/wolfi/ncurses-terminfo-base@6.3-r2?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/ncurses@6.3-r2?arch=x86_64",
+          "type": "operating-system",
+          "name": "ncurses",
+          "version": "6.3-r2",
+          "description": "console display library",
+          "purl": "pkg:apk/wolfi/ncurses@6.3-r2?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/readline@8.2-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "readline",
+          "version": "8.2-r0",
+          "description": "GNU readline library",
+          "purl": "pkg:apk/wolfi/readline@8.2-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "GPL-3.0-or-later"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/libssl3@3.0.7-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "libssl3",
+          "version": "3.0.7-r1",
+          "description": "OpenSSL libssl library",
+          "purl": "pkg:apk/wolfi/libssl3@3.0.7-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "Apache-2.0"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/zlib@1.2.13-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "zlib",
+          "version": "1.2.13-r1",
+          "description": "a library implementing the zlib compression algorithms",
+          "purl": "pkg:apk/wolfi/zlib@1.2.13-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MPL-2.0 AND MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/python3@3.11.1-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "python3",
+          "version": "3.11.1-r1",
+          "description": "the Python programming language",
+          "purl": "pkg:apk/wolfi/python3@3.11.1-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "PSF-2.0"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-contextlib2@21.6.0-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-contextlib2",
+          "version": "21.6.0-r0",
+          "description": "backports of the contextlib module from newer versions of python",
+          "purl": "pkg:apk/wolfi/py3-contextlib2@21.6.0-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "PSF-2.0 AND Apache-2.0"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-tomli@2.0.1-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-tomli",
+          "version": "2.0.1-r0",
+          "description": "TOML parser",
+          "purl": "pkg:apk/wolfi/py3-tomli@2.0.1-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-pep517@0.13.0-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-pep517",
+          "version": "0.13.0-r0",
+          "description": "wrappers to build python3 packages with PEP 517 hooks",
+          "purl": "pkg:apk/wolfi/py3-pep517@0.13.0-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-six@1.16.0-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-six",
+          "version": "1.16.0-r0",
+          "description": "python 2 and 3 compatibility library",
+          "purl": "pkg:apk/wolfi/py3-six@1.16.0-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-retrying@1.3.4-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-retrying",
+          "version": "1.3.4-r0",
+          "description": "python 2 and 3 compatibility library",
+          "purl": "pkg:apk/wolfi/py3-retrying@1.3.4-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "Apache-2.0"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-appdirs@1.4.4-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-appdirs",
+          "version": "1.4.4-r1",
+          "description": "a small python module for appdir support",
+          "purl": "pkg:apk/wolfi/py3-appdirs@1.4.4-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-more-itertools@9.0.0-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-more-itertools",
+          "version": "9.0.0-r1",
+          "description": "more routines for operating on iterables, beyond itertools",
+          "purl": "pkg:apk/wolfi/py3-more-itertools@9.0.0-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-ordered-set@4.0.2-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-ordered-set",
+          "version": "4.0.2-r1",
+          "description": "mutableset which remembers its order",
+          "purl": "pkg:apk/wolfi/py3-ordered-set@4.0.2-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-parsing@3.0.9-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-parsing",
+          "version": "3.0.9-r1",
+          "description": "simple packaging tool for simple packages (core)",
+          "purl": "pkg:apk/wolfi/py3-parsing@3.0.9-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-packaging@21.3-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-packaging",
+          "version": "21.3-r1",
+          "description": "core utilities for python3 packaging",
+          "purl": "pkg:apk/wolfi/py3-packaging@21.3-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "Apache-2.0 AND BSD-2-Clause"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-setuptools@59.4.0-r1?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-setuptools",
+          "version": "59.4.0-r1",
+          "description": "collection of enhancements to the python3 distutils",
+          "purl": "pkg:apk/wolfi/py3-setuptools@59.4.0-r1?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        },
+        {
+          "bom-ref": "pkg:apk/wolfi/py3-pip@22.3.1-r0?arch=x86_64",
+          "type": "operating-system",
+          "name": "py3-pip",
+          "version": "22.3.1-r0",
+          "description": "tool for installing and managing python packages",
+          "purl": "pkg:apk/wolfi/py3-pip@22.3.1-r0?arch=x86_64",
+          "licenses": [
+            {
+              "expression": "MIT"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:apk/wolfi/glibc-locale-posix@2.36-r3?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/wolfi-baselayout@20221118-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/glibc-locale-posix?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/glibc@2.36-r3?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/wolfi-baselayout?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/busybox@1.35.0-r4?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/ca-certificates-bundle@20220614-r2?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/bzip2@1.0.8-r2?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/libcrypto3@3.0.7-r1?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/expat@2.5.0-r0?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/libffi@3.4.4-r0?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/gdbm@1.23-r1?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/xz@5.4.0-r0?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/libgcc@12.2.0-r6?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/libstdc++@12.2.0-r6?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/mpdecimal@2.5.1-r1?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/ncurses-terminfo-base@6.3-r2?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/ncurses@6.3-r2?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/ncurses-terminfo-base?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/readline@8.2-r0?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/libssl3@3.0.7-r1?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/zlib@1.2.13-r1?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/python3@3.11.1-r1?arch=x86_64",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-contextlib2@21.6.0-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-tomli@2.0.1-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-pep517@0.13.0-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/py3-tomli?arch=x86_64",
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-six@1.16.0-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-retrying@1.3.4-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/py3-six?arch=x86_64",
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-appdirs@1.4.4-r1?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-more-itertools@9.0.0-r1?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-ordered-set@4.0.2-r1?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-parsing@3.0.9-r1?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-packaging@21.3-r1?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/py3-parsing?arch=x86_64",
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-setuptools@59.4.0-r1?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/py3-appdirs?arch=x86_64",
+        "pkg:apk/wolfi/py3-more-itertools?arch=x86_64",
+        "pkg:apk/wolfi/py3-ordered-set?arch=x86_64",
+        "pkg:apk/wolfi/py3-packaging?arch=x86_64",
+        "pkg:apk/wolfi/py3-parsing?arch=x86_64",
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    },
+    {
+      "ref": "pkg:apk/wolfi/py3-pip@22.3.1-r0?arch=x86_64",
+      "dependsOn": [
+        "pkg:apk/wolfi/py3-contextlib2?arch=x86_64",
+        "pkg:apk/wolfi/py3-pep517?arch=x86_64",
+        "pkg:apk/wolfi/py3-retrying?arch=x86_64",
+        "pkg:apk/wolfi/py3-setuptools?arch=x86_64",
+        "pkg:apk/wolfi/python3?arch=x86_64"
+      ]
+    }
+  ]
+}
